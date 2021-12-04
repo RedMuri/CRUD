@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="UTF-8">
+    <title> Список студентов </title>
+    <link rel="stylesheet" href="CRUD.css">
+</head>
+<body>
+
+<table >
+    <tr class="table-head">
+        <th>№</th>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Отчество</th>
+        <th>Группа</th>
+        <th>Удалить</th>
+        <th>Изменить</th>
+    </tr>
+    <tr>
+        <td class="number">1</td>
+        <td>Мартинов</td>
+        <td>Саша</td>
+        <td>Саудович</td>
+        <td>ЦПИ-06</td>
+        <td><a class="delete-btn" href="delete-page.html">Удалить</a></td>
+        <td><a class="change-btn" href="delete-page.html">Изменить</a></td>
+    </tr>
+    <tr>
+        <td class="number">2</td>
+        <td>Бубнов</td>
+        <td>Андрей</td>
+        <td>Михайлович</td>
+        <td>ЦПИ-06</td>
+        <td><a class="delete-btn" href="delete-page.html">Удалить</a></td>
+        <td><a class="change-btn" href="delete-page.html">Изменить</a></td>
+    </tr>
+    <tr>
+        <td class="number">3</td>
+        <td>Саулова</td>
+        <td>Лера</td>
+        <td>Петровна</td>
+        <td>ЦПИ-06</td>
+        <td><a class="delete-btn" href="delete-page.html">Удалить</a></td>
+        <td><a class="change-btn" href="delete-page.html">Изменить</a></td>
+    </tr>
+    <tr>
+        <td class="number">4</td>
+        <td>Торинова</td>
+        <td>Хава</td>
+        <td>Васильевна</td>
+        <td>ЦПИ-06</td>
+        <td><a class="delete-btn" href="delete-page.html">Удалить</a></td>
+        <td><a class="change-btn" href="delete-page.html">Изменить</a></td>
+    </tr>
+    <tr>
+        <td class="number">5</td>
+        <td>Ганижев</td>
+        <td>Илез</td>
+        <td>Владимирович</td>
+        <td>ЦПИ-06</td>
+        <td><a class="delete-btn" href="delete-page.html">Удалить</a></td>
+        <td><a class="change-btn" href="delete-page.html">Изменить</a></td>
+    </tr>
+</table>
+<a target="_blank" href="add-page.html" class="add-btn">Добавить</a>
+
+
+
+
+    <form class="add-form" action="">
+        <h3>Добавить студента</h3>
+        <input class="name" type="text" placeholder="Введите имя..." />
+        <input class="surname" type="text" placeholder="Введите фамилию..." />
+        <input class="otchestvo" type="text" placeholder="Введите отчество..." />
+        <input class="group" type="text" placeholder="Введите группу..." />
+        <button type="submit">Добавить</button>
+    </form>
+
+
+    <div class="delete-wrapper">
+        <h2>Вы действительно хотите удалить?</h2>
+        <div class="btn-wrap">
+            <button id="yes">Да</button>
+            <button id="no">Нет</button>
+        </div>
+    </div>
+
+    <div class="change-form">
+        <h3>Изменить данные</h3>
+        <label><input class="name" type="text" />Имя</label>
+        <label><input class="surname" type="text" />Фамилия</label>
+        <label><input class="otchestvo" type="text" />Отчество</label>
+        <label><input class="group" type="text" />Группа</label>
+        <button class="submit-change-btn" type="submit">Изменить</button>
+    </div>
+
+    <script src="CRUD.js"></script>
+</body>
